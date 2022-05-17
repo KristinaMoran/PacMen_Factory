@@ -1,7 +1,7 @@
 var pos = 0;
 const pacArray = [
-  ["./images/PacMan1.png", "./images/PacMan2.png"],
-  ["./images/PacMan3.png", "images/PacMan4.png"],
+  ["PacMan1.png", "PacMan2.png"],
+  ["PacMan3.png", "PacMan4.png"],
 ];
 
 var direction = 0;
@@ -17,10 +17,10 @@ function setToRandom(scale) {
 function makePac() {
   let velocity = setToRandom(10);
   let position = setToRandom(200);
-  console.log(position);
+
   let newimg = document.createElement("img");
   newimg.style.position = "absolute";
-  newimg.src = "./images/PacMan1.png";
+  newimg.src = "PacMan1.png";
   newimg.width = 100;
   newimg.style.left = position.x + "px";
   newimg.style.top = position.y + "px";
